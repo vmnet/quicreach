@@ -47,7 +47,7 @@ struct ReachConfig {
     QUIC_CREDENTIAL_FLAGS CredFlags {QUIC_CREDENTIAL_FLAG_CLIENT};
     const char* OutCsvFile {nullptr};
     ReachConfig() {
-        Settings.SetDisconnectTimeoutMs(500);
+        Settings.SetDisconnectTimeoutMs(300);
         Settings.SetHandshakeIdleTimeoutMs(300);
         Settings.SetPeerUnidiStreamCount(3);
         Settings.SetMinimumMtu(1288); /* We use a slightly larger than default MTU:
